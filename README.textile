@@ -24,11 +24,24 @@ also removed the git submodule called sinatra and added sinatra like a gem on ge
 To install it just type the next commands
 
 git clone https://github.com/tangosource/git-wiki.git
-create a gemset to work
 
+git checkout tango_implementation
+
+create a gemset to work
 cd git-wiki
 cretea  file called .rvmrc and put inside
+ 
  rvm --create 1.8.7@git-wiki
 
 bundle install
 ruby git-wiki.rb
+
+
+that is all
+now you can go to the url 
+
+ http:127.0.0.1:4567
+
+ and test the application
+
+
