@@ -1,0 +1,17 @@
+#!/bin/bash
+
+if [ -n "${BASH_SOURCE}" ]; then
+ root=$(dirname $(readlink -e $BASH_SOURCE))
+  else
+  root="."
+fi
+
+if [ -e "${root}/.rvmrc_custom" ]; then
+  source ${root}/.rvmrc_custom
+else
+  rvm --create 1.8.7@git-wiki
+fi
+
+if [ "$(gem --version)" != "1.8.15" ]; then
+  rvm rubygems 1.8.15
+fi
