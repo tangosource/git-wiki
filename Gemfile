@@ -1,7 +1,7 @@
 # A sample Gemfile
 source "http://rubygems.org"
 
-gem "RedCloth"
+gem "bluecloth","2.2.0"
 gem "bundler", "1.0.21"
 
 gem "cgi_multipart_eof_fix","2.5.0"
