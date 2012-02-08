@@ -1,7 +1,7 @@
 /* elements */
 
 body {
-  background-color: #fff;
+  background-color: #4A525A;
   color: #333;
   font-family: Helvetica, Arial, "Deja Vu Sans", "Bitstream Vera Sans", sans-serif;
   font-size: .95em;
@@ -19,6 +19,7 @@ a:hover { text-decoration: underline; }
 code, pre {
   font-family: "Deja Vu Sans Mono", "Bitstream Vera Sans Mono", "Inconsolata", "Consolas", monospace;
   background-color: #EAF2F5;
+  word-wrap: break-word;  
 }
 
 h1 {
@@ -50,6 +51,10 @@ textarea {
 ul {
   list-style-type: square;
   padding: 0 0 1em 1.4em;
+}
+
+img {
+  max-width: 100%;
 }
 
 /* classes */
@@ -174,6 +179,7 @@ div.attach-options {
  clear: both;
  margin: auto;
  width: 70%;
+ background-color: white;
 }
 
 #edit_textarea {
