@@ -2,8 +2,7 @@
 source "http://rubygems.org"
 
 gem "bluecloth","2.2.0"
-gem "bundler", "1.0.21"
-
+gem "bundler", "~> 1.0.21" 
 gem "cgi_multipart_eof_fix","2.5.0"
 gem "daemons","1.1.6"
 gem "diff-lcs", "1.1.3"

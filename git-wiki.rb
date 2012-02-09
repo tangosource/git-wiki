@@ -57,6 +57,16 @@ get '/d/:page/:rev' do
 end
 
 # application paths (/a/ namespace)
+get '/a/update' do
+  puts $repo.branch
+  puts $repo.pull()
+  redirect '/' + HOMEPAGE
+end
+get '/a/push' do
+  puts $repo.branch
+  puts $repo.push
+  redirect '/' + HOMEPAGE
+end
 
 get '/a/list' do
   pages = $repo.log.first.gtree.children
